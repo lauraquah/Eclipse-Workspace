@@ -7,7 +7,6 @@ public class Entry {
 		value = 90;
 		
 		pRef = new Person();
-		
 		Person pRef2 = pRef;
 		
 		System.out.println(pRef == pRef2);
