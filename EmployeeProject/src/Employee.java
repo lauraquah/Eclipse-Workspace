@@ -1,14 +1,21 @@
 
+
+import java.util.Date;
+import java.text.ParseException;
+import java.util.Calendar;
+import java.text.SimpleDateFormat;
+import java.util.GregorianCalendar;
+
 class Employee {
 
 	public static int EmpCount=0;
 	public int EmpID;
 
-	private String FirstName;
-	private String LastName;
-	private int Salary;
-	private String Grade;
-	private String JoinDate;
+	private String firstName;
+	private String lastName;
+	private double salary;
+	private String grade;
+	private Date joinDate;
 	
 	//method to get unique ID
 	public static int UniqueEmpID(){
@@ -21,7 +28,7 @@ class Employee {
 	}
 		
 	public void setFirstName(String FirstName){
-		this.FirstName = FirstName;
+		this.firstName = FirstName;
 	}
 
 	public static int getEmpCount() {
@@ -33,36 +40,54 @@ class Employee {
 	}
 
 	public String getFirstName() {
-		return FirstName;
+		return firstName;
 	}
 
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 
-	public int getSalary() {
-		return Salary;
+	public double getSalary() {
+		return salary;
 	}
 
 	public String getGrade() {
-		return Grade;
+		return grade;
 	}
 
-	public String getJoinDate() {
-		return JoinDate;
+	public Date getJoinDate() {
+		return joinDate;
 	}
 
 	public void setLastName(String LastName){
-		this.LastName = LastName;
+		this.lastName = LastName;
 	}
-	public void setSalary(int Salary){
-		this.Salary = Salary;
+	public void setSalary(double salary){
+		this.salary = salary;
 	}
 	public void setGrade(String Grade){
-		this.Grade = Grade;
+		this.grade = Grade;
 	}
-	public void setJoinDate(String JoinDate){
-		this.JoinDate = JoinDate;
+	
+//	public void setJoinDate(String jd){
+//		SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+//		try {
+//			Date date1=df.parse(jd);
+//
+//			
+//			
+//			this.joinDate = date1;
+//		} catch (ParseException e) {
+//			
+//			System.out.println("Date Exception hit" + e.getMessage());
+//		}
+//		
+//		
+//	}
+
+	public void setJoinDate(int dd, int mm, int yyyy){
+		
+		
 	}
 	
 

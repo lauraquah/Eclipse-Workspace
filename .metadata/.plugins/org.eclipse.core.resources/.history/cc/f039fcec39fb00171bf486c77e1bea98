@@ -1,0 +1,16 @@
+
+public class MatrixTest {
+
+	public static void main(String[] args) {
+		int[][] mat1={{10,20,30},{40,50,60}};
+		
+		
+//		int mat2[][];
+//		mat2 = new int[3][2];
+		
+		System.out.println(mat1);
+		
+	}
+	
+	
+}

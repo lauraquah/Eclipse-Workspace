@@ -1,0 +1,11 @@
+
+public class ContractEmployee extends Employee {
+	private double salary;
+	private int hours;
+	private double rate;
+	
+	public ContractEmployee(){
+		salary = hours * rate;
+	}
+	
+}

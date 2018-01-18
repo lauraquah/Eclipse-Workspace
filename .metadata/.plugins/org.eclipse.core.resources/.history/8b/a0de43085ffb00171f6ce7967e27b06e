@@ -1,0 +1,8 @@
+package src.com.cg.beans;
+
+public class Cat extends Feline {
+	public void crawls(){
+		System.out.println("Cat crawls alone");
+	}
+
+}

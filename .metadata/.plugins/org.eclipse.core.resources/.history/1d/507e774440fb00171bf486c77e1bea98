@@ -1,0 +1,7 @@
+
+public class Fundamentals {
+	public static void main(String[] args) {
+		boolean b4 = 0;
+	}
+
+}

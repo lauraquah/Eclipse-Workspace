@@ -1,0 +1,10 @@
+
+public class Fundamentals {
+
+	public static void main(String[] args) {
+		byte c1 = 0xffff;  	
+	
+	
+	}
+
+}

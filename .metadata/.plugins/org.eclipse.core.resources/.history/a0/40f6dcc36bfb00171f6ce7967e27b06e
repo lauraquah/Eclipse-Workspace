@@ -1,0 +1,15 @@
+
+public class ContractEmployee extends Employee {
+	
+	public static int contractEmpCount=0;
+	{
+		contractEmpCount = contractEmpCount + 1;
+	}
+	
+	public void setSalary(double hours, double rate){
+		setSalary(hours * rate);
+	}
+	
+
+	
+}

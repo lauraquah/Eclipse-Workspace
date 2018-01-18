@@ -1,0 +1,14 @@
+
+public class Details {
+
+	public static void main(String[] args) {
+
+		//Employee first = new Employee();
+
+		System.out.println(Employee.UniqueEmpID());
+		System.out.println(Employee.UniqueEmpID());
+
+		
+	}
+
+}

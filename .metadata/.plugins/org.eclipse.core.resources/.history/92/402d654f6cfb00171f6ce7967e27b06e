@@ -1,0 +1,20 @@
+
+public class ContractEmployee extends Employee {
+	private String name;
+	
+	public static int contractEmpCount=0;
+	{
+		contractEmpCount = contractEmpCount + 1;
+	}
+	
+	public void setSalary(double hours, double rate){
+		setSalary(hours * rate);
+	}
+	
+	public void contractor(String name){
+		this.name = name;
+		
+	}
+
+	
+}

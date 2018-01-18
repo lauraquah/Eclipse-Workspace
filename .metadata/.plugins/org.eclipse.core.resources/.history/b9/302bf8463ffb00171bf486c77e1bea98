@@ -1,0 +1,10 @@
+
+public class Fundamentals {
+
+	public static void main(String[] args) {
+		char c1 = 0xfff;  	
+	
+	
+	}
+
+}

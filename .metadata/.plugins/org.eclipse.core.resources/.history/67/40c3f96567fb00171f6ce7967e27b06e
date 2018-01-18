@@ -1,0 +1,9 @@
+
+public class PermanentEmployee extends Employee{
+	private int salary;
+	
+	public PermanentEmployee(int salary){
+		
+		
+	}
+}
