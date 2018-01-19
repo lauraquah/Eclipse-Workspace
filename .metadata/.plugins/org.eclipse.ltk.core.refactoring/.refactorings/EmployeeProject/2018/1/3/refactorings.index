@@ -5,3 +5,6 @@
 1516179500632	Rename field 'JoinDate'
 1516179522120	Rename local variable 'JoinDate'
 1516180104181	Delete element
+1516264735969	Encapsulate field 'joinDate'
+1516266849095	Encapsulate field 'contr'
+1516350807680	Delete element

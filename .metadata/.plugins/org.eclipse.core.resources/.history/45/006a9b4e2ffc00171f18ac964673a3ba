@@ -1,0 +1,42 @@
+
+public class Contractor {
+	private String firstName;
+	private String lastName;
+	private int rate;
+	private int id;
+	private ContractEmployee[] EmployeeList;
+	
+	public String getFirstName() {
+		return firstName;
+	}
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	public String getLastName() {
+		return lastName;
+	}
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public int getRate() {
+		return rate;
+	}
+	public void setRate(int rate) {
+		this.rate = rate;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public ContractEmployee[] getEmployeeList() {
+		return EmployeeList;
+	}
+	public void setEmployeeList(ContractEmployee[] employeeList) {
+		EmployeeList = employeeList;
+	}
+
+	
+	
+}

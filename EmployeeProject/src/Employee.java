@@ -9,13 +9,58 @@ import java.util.GregorianCalendar;
 class Employee {
 
 	public static int EmpCount=0;
+	
 	public int EmpID;
-
 	private String firstName;
 	private String lastName;
 	private double salary;
 	private String grade;
+	private int joinDay;
+	private int joinMonth;
+	private int joinYear;
 	private Date joinDate;
+	
+	{
+		EmpCount++;
+	}
+	
+	public Employee() {
+	}
+	
+	public Employee(String firstName, String lastName, double salary, String grade, Date joinDate) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.salary = salary;
+		this.grade = grade;
+		this.joinDate = joinDate;
+		this.EmpID = EmpCount;
+	}
+
+	public int getJoinDay() {
+		return joinDay;
+	}
+
+	public void setJoinDay(int joinDay) {
+		this.joinDay = joinDay;
+	}
+
+	public int getJoinMonth() {
+		return joinMonth;
+	}
+
+	public void setJoinMonth(int joinMonth) {
+		this.joinMonth = joinMonth;
+	}
+
+	public int getJoinYear() {
+		return joinYear;
+	}
+
+	public void setJoinYear(int joinYear) {
+		this.joinYear = joinYear;
+	}
+
 	
 	//method to get unique ID
 	public static int UniqueEmpID(){
@@ -55,10 +100,6 @@ class Employee {
 		return grade;
 	}
 
-	public Date getJoinDate() {
-		return joinDate;
-	}
-
 	public void setLastName(String LastName){
 		this.lastName = LastName;
 	}
@@ -68,27 +109,25 @@ class Employee {
 	public void setGrade(String Grade){
 		this.grade = Grade;
 	}
-	
-//	public void setJoinDate(String jd){
-//		SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-//		try {
-//			Date date1=df.parse(jd);
-//
-//			
-//			
-//			this.joinDate = date1;
-//		} catch (ParseException e) {
-//			
-//			System.out.println("Date Exception hit" + e.getMessage());
-//		}
-//		
-//		
-//	}
 
-	public void setJoinDate(int dd, int mm, int yyyy){
+	public String getJoinDate() {
+		SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
 		
+		return df.format(joinDate);
+	}
+
+	public void setJoinDate(int joinDay, int joinMonth, int joinYear) {
+		Date date = new GregorianCalendar(joinYear, joinMonth, joinDay).getTime();
+		this.joinDate = date;
 		
 	}
+	
+	@Override
+	public String toString() {
+		return getFirstName();
+	}
+	
+
 	
 
 }

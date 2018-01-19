@@ -1,0 +1,129 @@
+
+
+import java.util.Date;
+import java.text.ParseException;
+import java.util.Calendar;
+import java.text.SimpleDateFormat;
+import java.util.GregorianCalendar;
+
+class Employee {
+
+	public static int EmpCount=0;
+	public int EmpID;
+
+	private String firstName;
+	private String lastName;
+	private double salary;
+	private String grade;
+	private int joinDay;
+	private int joinMonth;
+	private int joinYear;
+	private Date joinDate;
+	
+	
+	public Employee() {
+	}
+	
+	public Employee(String firstName, String lastName, double salary, String grade, Date joinDate) {
+		super();
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.salary = salary;
+		this.grade = grade;
+		this.joinDate = joinDate;
+	}
+
+	public int getJoinDay() {
+		return joinDay;
+	}
+
+	public void setJoinDay(int joinDay) {
+		this.joinDay = joinDay;
+	}
+
+	public int getJoinMonth() {
+		return joinMonth;
+	}
+
+	public void setJoinMonth(int joinMonth) {
+		this.joinMonth = joinMonth;
+	}
+
+	public int getJoinYear() {
+		return joinYear;
+	}
+
+	public void setJoinYear(int joinYear) {
+		this.joinYear = joinYear;
+	}
+
+	
+	//method to get unique ID
+	public static int UniqueEmpID(){
+		EmpCount = EmpCount + 1;
+		return EmpCount;
+	}
+	
+	public int GetID(){
+		return EmpID;
+	}
+		
+	public void setFirstName(String FirstName){
+		this.firstName = FirstName;
+	}
+
+	public static int getEmpCount() {
+		return EmpCount;
+	}
+
+	public int getEmpID() {
+		return EmpID;
+	}
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	public String getLastName() {
+		return lastName;
+	}
+
+	public double getSalary() {
+		return salary;
+	}
+
+	public String getGrade() {
+		return grade;
+	}
+
+	public void setLastName(String LastName){
+		this.lastName = LastName;
+	}
+	public void setSalary(double salary){
+		this.salary = salary;
+	}
+	public void setGrade(String Grade){
+		this.grade = Grade;
+	}
+
+	public String getJoinDate() {
+		SimpleDateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+		
+		return df.format(joinDate);
+	}
+
+	public void setJoinDate(int joinDay, int joinMonth, int joinYear) {
+		Date date = new GregorianCalendar(joinYear, joinMonth, joinDay).getTime();
+		this.joinDate = date;
+		
+	}
+	
+	@Override
+	public String toString() {
+		return getFirstName();
+	}
+	
+
+	
+
+}

@@ -1,0 +1,35 @@
+import java.util.Date;
+import java.text.ParseException;
+import java.util.Calendar;
+import java.text.SimpleDateFormat;
+
+public class Details {
+	
+	public static void main(String[] args) {		
+		
+		Employee[] emp = new Employee[10];
+		
+		
+//		System.out.println("The salary is: " + first.getSalary() + ", " + first.getContractorName());
+	
+		PermanentEmployee first = new PermanentEmployee("F", "Last", 10000, "aa",new Date());
+
+		emp[0] = first;
+		
+		
+//		System.out.println(Employee.UniqueEmpID() + ", "+ first.getFirstName() + ", " + first.getJoinDate() + ", " + first.getSalary());
+		
+		System.out.println(Employee.UniqueEmpID() + ", "+ first.getFirstName() + ", " + first.getJoinDate());
+
+		System.out.println("Number of Employees:" + Employee.EmpCount );
+		
+		System.out.println("Contract Employee Counter: " + ContractEmployee.contractEmpCount);
+		
+		System.out.println("Permanent Employee: " + PermanentEmployee.permEmpCount);
+		
+	}
+
+
+
+}
+

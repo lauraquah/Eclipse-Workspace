@@ -3,4 +3,6 @@
 <fullyQualifiedTypeName name="FreshJuice.FreshJuiceSize"/>
 <fullyQualifiedTypeName name="ContractEmployee"/>
 <fullyQualifiedTypeName name="PermanentEmployee"/>
+<fullyQualifiedTypeName name="com.cg.beans.Animal"/>
+<fullyQualifiedTypeName name="com.cg.beans.Dog"/>
 </qualifiedTypeNameHistroy>
